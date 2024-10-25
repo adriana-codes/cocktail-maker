@@ -3,35 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
     <link rel="stylesheet" href="src/style.css" />
 
     <title>Cocktail Hour | Adri Codes 🖤</title>
   </head>
   <body>
-    <header>
-      <h1>Fancy something to drink?</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="search"
-          name="ingredient"
-          placeholder="Enter an ingredient"
-          autofocus
-          required
-        />
-        <input type="submit" value="Shake it up!" />
-      </form>
-    </main>
-    <footer>
-      <a href="#" target="_blank">Open sourced</a>
-      AI project coded by
-      <a href="https://github.com/adriana-codes" target="_blank">Adri Díaz</a>
-      🖤
-      <br />
-      Hosted on
-      <a href="#" target="_blank">Netlify</a>
-    </footer>
+    <div class="the-maker">
+      <header>
+        <h1>Fancy something to drink?</h1>
+      </header>
+      <main>
+        <div class="ingredient-instructions">
+          <form id="cocktail-shaker">
+            <input
+              type="text"
+              placeholder="Enter an ingredient"
+              autofocus
+              required
+              class="ingredient-prompt"
+              id="user-instructions"
+            />
+            <input type="submit" value="Shake it up!" class="submit-button" />
+          </form>
+          <div class="ideas">i.e.: x, x or x</div>
+        </div>
+        <div class="cocktail-maker hide" id="cocktail-maker"></div>
+      </main>
+      <footer>
+        <a
+          href="https://github.com/adriana-codes/cocktail-maker"
+          target="_blank"
+          >Open sourced</a
+        >
+        AI project coded by
+        <a href="https://github.com/adriana-codes" target="_blank">Adri Díaz</a>
+        🖤
+        <br />
+        Hosted on
+        <a href="https://thecocktailmaker.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/script.js"></script>
   </body>
 </html>
