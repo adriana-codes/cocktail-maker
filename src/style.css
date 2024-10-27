@@ -1,5 +1,10 @@
 body {
+  background-color: #d67e26;
   font-family: "Poppins", sans-serif;
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/148/742/original/download.png?1730051208);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30% 30%;
 }
 
 .the-maker {
@@ -12,6 +17,7 @@ h1 {
   font-weight: 600;
   font-size: 40px;
   font-style: italic;
+  color: #697c37;
 }
 
 .ingredient-instructions {
@@ -19,10 +25,12 @@ h1 {
   padding: 25px;
   border-radius: 8px;
   margin-bottom: 20px;
+  background-color: #f4eec7;
 }
 
 form {
   display: flex;
+  padding: 15px;
 }
 
 .ideas {
@@ -30,6 +38,7 @@ form {
   opacity: 0.7;
   margin-top: 5px;
   font-size: 10px;
+  color: #697c37;
 }
 
 .ingredient-prompt {
@@ -43,10 +52,13 @@ form {
   border-radius: 6px;
   margin-left: 8px;
   font-family: Poppins;
+  border: 0;
+  background-color: #57385c;
+  color: #f4eec7;
 }
 
 .cocktail-maker {
-  background-color: #ffff;
+  background-color: #f4eec7;
   font-size: 15px;
   padding: 20px;
   line-height: 2;
@@ -56,12 +68,31 @@ form {
   border-radius: 7px;
 }
 
-/*.hide {
+.hide {
   display: none;
 }
-*/
+
+.preparing {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+a {
+  color: #dcc325;
+}
 
 footer {
+  color: #697c37;
   text-align: center;
   font-size: 12px;
   margin-top: 20px;
