@@ -5,6 +5,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 30% 30%;
+  background-attachment: fixed;
 }
 
 .the-maker {
@@ -88,7 +89,7 @@ form {
 }
 
 a {
-  color: #dcc325;
+  color: #bea505e0;
 }
 
 footer {

@@ -3,7 +3,7 @@ function displayCocktail(response) {
     strings: response.data.answer,
     autoStart: true,
     cursor: "",
-    delay: "natural",
+    delay: 80,
   });
 }
 
